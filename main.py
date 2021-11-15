@@ -14,6 +14,7 @@ class MyBodePlotter(BodePlotter):
         h = s / 10
         return h
 
+
 if __name__ == '__main__':
     plotter = MyBodePlotter()
     plotter.get_bode_plot()
