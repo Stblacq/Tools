@@ -1,4 +1,5 @@
 ## Usage
+````
 class MyBodePlotter(BodePlotter):
   def get_G_j_w(self, w):
         """G(s) = K/2s+100"""
@@ -9,3 +10,4 @@ class MyBodePlotter(BodePlotter):
 
 plotter = MyBodePlotter()
 plotter.get_bode_plot()
+```
