@@ -21,7 +21,7 @@ class BodePlotter(ABC):
         return np.arctan2(np.real(G_j_w), np.imag(G_j_w))
 
     def get_bode_plot(self):
-        x = [0.1, 1, 10, 10]
+        x = [0.1, 1, 10, 100]
         m = [self.get_M(i) for i in x]
         phi = [self.get_phi(i) for i in x]
         ax1, ax2 = self.configure_axis()
