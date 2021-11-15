@@ -12,6 +12,11 @@ class BodePlotter(ABC):
         """
         pass
 
+    @abstractmethod
+    def get_H_j_w(self, w):
+        """Calculate Feedback"""
+        pass
+
     def get_M(self, w, h=1):
         G_j_w = self.get_G_j_w(w)
         return 20 * math.log10((abs(G_j_w) * abs(h)))
